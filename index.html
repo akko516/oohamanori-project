@@ -1,0 +1,852 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="description" content="料亭品質を、そのまま食卓へ。有明海大浜の海苔養殖製造。職人の手仕事が育む、日本一の大浜海苔。"/>
+  <title>大浜海苔 | OHAMA NORI — 料亭品質を、そのまま食卓へ。</title>
+  <link rel="stylesheet" href="style.css"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Noto+Serif+JP:wght@200;300;400;500;600&family=Shippori+Mincho+B1:wght@400;500;600;700;800&display=swap" rel="stylesheet"/>
+</head>
+<body>
+
+<!-- ===== LOADER ===== -->
+<div id="loader">
+  <div class="loader-content">
+    <div class="loader-logo">
+      <!-- ロゴマーク画像: 用意できたら下の img タグのコメントを外して使用 -->
+      <!-- <img src="images/logo.svg" alt="大浜海苔" class="loader-logo-img"> -->
+      <div class="loader-logo-text">
+        <span class="loader-logo-ja">大浜海苔</span>
+        <span class="loader-logo-en">OHAMA NORI</span>
+      </div>
+    </div>
+    <div class="loader-bar-wrap"><div class="loader-bar"></div></div>
+  </div>
+</div>
+
+<!-- ===== HEADER ===== -->
+<header id="header">
+  <div class="header-inner">
+    <a href="#hero" class="logo">
+      <div class="logo-mark">
+        <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="20" cy="20" r="18" stroke="#C8A96A" stroke-width="1"/>
+          <path d="M20 8C13.37 8 8 13.37 8 20s5.37 12 12 12 12-5.37 12-12S26.63 8 20 8z" fill="#C8A96A" opacity=".12"/>
+          <text x="20" y="25" text-anchor="middle" fill="#C8A96A" font-size="13" font-family="Noto Serif JP">苔</text>
+        </svg>
+      </div>
+      <div class="logo-text">
+        <span class="logo-ja-main">大浜海苔</span>
+        <span class="logo-en-sub">有明海・大浜の恵み</span>
+      </div>
+    </a>
+    <nav class="nav-pc">
+      <a href="#story">こだわり</a>
+      <a href="#hayano">早野義章の想い</a>
+      <a href="#artisan">職人の技</a>
+      <a href="#products">商品一覧</a>
+      <a href="#nutrition">海苔の栄養</a>
+      <a href="#results">使用店舗・実績</a>
+      <a href="#recipe">レシピ</a>
+      <a href="#overseas">海外発送</a>
+      <a href="#contact" class="nav-cta">お問い合わせ</a>
+    </nav>
+    <div class="header-icons">
+      <a href="https://www.instagram.com/" target="_blank" rel="noopener" class="header-ig" aria-label="Instagram">
+        <svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+      </a>
+      <button class="header-cart" id="cartToggle" aria-label="カートを開く">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="20" height="20"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 001.97 1.61h9.72a2 2 0 001.97-1.61L23 6H6"/></svg>
+        <span class="header-cart-label">カート</span>
+        <span class="cart-badge" id="cartBadge" aria-hidden="true">0</span>
+      </button>
+      <button class="hamburger" id="hamburger" aria-label="メニュー">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<!-- ===== CART SIDEBAR ===== -->
+<div class="cart-overlay" id="cartOverlay"></div>
+<aside class="cart-drawer" id="cartDrawer" aria-hidden="true">
+  <div class="cart-drawer-header">
+    <h3>カート</h3>
+    <button class="cart-close" id="cartClose" aria-label="カートを閉じる">✕</button>
+  </div>
+  <div class="cart-drawer-body">
+    <p class="cart-empty-msg" id="cartEmptyMsg">カートに商品がありません。</p>
+    <ul class="cart-list" id="cartList"></ul>
+  </div>
+  <div class="cart-drawer-foot" id="cartFoot">
+    <div class="cart-subtotal">
+      <span>小計（税込）</span>
+      <strong id="cartTotalPrice">¥0</strong>
+    </div>
+    <p class="cart-note">※ 送料は確認後にご案内します</p>
+    <button class="btn-primary cart-order-btn" id="cartOrderBtn">注文フォームへ進む</button>
+  </div>
+</aside>
+
+<!-- Mobile Nav -->
+<div class="sp-nav" id="spNav">
+  <button class="sp-nav-close" id="spNavClose">✕</button>
+  <nav>
+    <a href="#story" class="sp-nav-link">こだわり</a>
+    <a href="#hayano" class="sp-nav-link">早野義章の想い</a>
+    <a href="#artisan" class="sp-nav-link">職人の技</a>
+    <a href="#products" class="sp-nav-link">商品一覧</a>
+    <a href="#nutrition" class="sp-nav-link">海苔の栄養</a>
+    <a href="#results" class="sp-nav-link">使用店舗・実績</a>
+    <a href="#recipe" class="sp-nav-link">レシピ</a>
+    <a href="#overseas" class="sp-nav-link">海外発送</a>
+    <a href="#contact" class="sp-nav-link">お問い合わせ</a>
+  </nav>
+  <button class="sp-nav-cart" id="spNavCart">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="18" height="18"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 001.97 1.61h9.72a2 2 0 001.97-1.61L23 6H6"/></svg>
+    カートを開く
+    <span class="sp-cart-badge" id="spCartBadge"></span>
+  </button>
+</div>
+
+<!-- ===== HERO (①ファーストビュー) ===== -->
+<section id="hero">
+  <div class="hero-bg">
+    <div class="hero-noise"></div>
+    <div class="hero-overlay"></div>
+  </div>
+  <div class="hero-content">
+    <div class="hero-sub-label reveal-hero">— 有明海大浜 職人仕立て —</div>
+    <h1 class="hero-h1 reveal-hero">
+      <span class="hero-catch-line">一枚で、</span>
+      <span class="hero-catch-line">料理が変わる。</span>
+    </h1>
+    <p class="hero-desc reveal-hero">有明海・大浜の職人が仕上げた、<br/>極上の海苔。</p>
+    <div class="hero-tags reveal-hero">
+      <span>香り</span><span>旨味</span><span>口どけ</span><span>すべてが別格。</span>
+    </div>
+    <div class="hero-btns reveal-hero">
+      <a href="#products" class="btn-primary">商品を見る</a>
+      <a href="#story" class="btn-ghost">プロ用はこちら</a>
+    </div>
+  </div>
+  <div class="hero-scroll-indicator">
+    <span>SCROLL</span>
+    <div class="scroll-line"></div>
+  </div>
+  <!-- 右上 floating text -->
+  <div class="hero-floating-text">香り、旨味、口どけ、<br/>すべてが別格。</div>
+  <!-- 日本一バッジ -->
+  <div class="hero-no1-badge">
+    <div class="hero-no1-inner">
+      <span class="hero-no1-top">有明海</span>
+      <span class="hero-no1-num">No.1</span>
+      <span class="hero-no1-sub">全国海苔生産量</span>
+    </div>
+  </div>
+</section>
+
+
+<!-- ===== ③④こだわり / 阿蘇・菊池川ストーリー ===== -->
+<section id="story" class="story-section">
+  <div class="story-map-bg">
+    <div class="story-map-overlay"></div>
+  </div>
+  <div class="container">
+    <div class="section-eyebrow reveal">ORIGIN &amp; STORY</div>
+    <h2 class="section-title reveal">阿蘇の大地が育んだ、<br/>豊かな恵みが海苔を育てる。</h2>
+    <p class="section-desc reveal">阿蘇山から湧き出る豊富なミネラルを含んだ清らかな水は、菊池川となり、大浜の有明海へと注ぎ込みます。栄養豊かなこの恵みが、香り高く、旨味の深い海苔を育てます。</p>
+
+    <!-- 写真ギャラリー -->
+    <div class="origin-photos reveal">
+      <figure class="origin-photo">
+        <img src="images/aso.png" alt="阿蘇から望む菊池川流域" loading="lazy">
+        <figcaption>
+          <span class="origin-caption-loc">阿蘇から望む菊池川流域</span>
+          <strong class="origin-caption-title">阿蘇の天然ミネラル</strong>
+          <p class="origin-caption-desc">阿蘇の火山岩盤が生み出すミネラル豊富な湧水が旨味のもとになります。</p>
+        </figcaption>
+      </figure>
+      <figure class="origin-photo">
+        <img src="images/kikuchi.png" alt="菊池渓谷（菊池市）" loading="lazy">
+        <figcaption>
+          <span class="origin-caption-loc">菊池渓谷（菊池市）</span>
+          <strong class="origin-caption-title">菊池川の恵み</strong>
+          <p class="origin-caption-desc">ミネラル豊富な清流が農業の歴史を育て、海苔の成長を支えます。</p>
+        </figcaption>
+      </figure>
+      <figure class="origin-photo">
+        <img src="images/kawaguchi.png" alt="菊池川が有明海に流れ込む河口" loading="lazy">
+        <figcaption>
+          <span class="origin-caption-loc">菊池川が有明海に流れ込む河口</span>
+          <strong class="origin-caption-title">有明海・大浜の環境</strong>
+          <p class="origin-caption-desc">潮の干満差と豊かな栄養環境、清浄な海水が高品質な海苔を育てる理想の環境です。</p>
+        </figcaption>
+      </figure>
+    </div>
+
+    <div class="section-purchase-cta reveal">
+      <a href="#products" class="btn-purchase">購入はこちら →</a>
+    </div>
+  </div>
+</section>
+
+<!-- ===== ⑤早野義章セクション ===== -->
+<section id="hayano" class="hayano-section">
+  <div class="container">
+    <div class="hayano-inner">
+      <div class="hayano-img-col reveal">
+        <div class="hayano-img-frame">
+          <div class="hayano-portrait-wrap">
+            <img src="images/hayano-portrait.jpg" alt="早野義章 肖像写真">
+            <div class="hayano-portrait-meta">
+              <span class="hayano-portrait-name">早野 義章</span>
+              <span class="hayano-portrait-era">MEIJI ERA</span>
+            </div>
+          </div>
+          <div class="hayano-hist-row">
+            <figure class="hayano-hist-fig">
+              <img src="images/hayano-group.jpg" alt="早野義章と同志たち">
+              <figcaption>門人と共に — 明治</figcaption>
+            </figure>
+            <figure class="hayano-hist-fig">
+              <img src="images/hayano-facility.jpg" alt="明治時代の海苔製造の様子">
+              <figcaption>養殖研究の記録</figcaption>
+            </figure>
+          </div>
+          <div class="hayano-frame-deco"></div>
+        </div>
+      </div>
+      <div class="hayano-text-col reveal">
+        <div class="section-eyebrow">FOUNDER STORY</div>
+        <h2 class="section-title" style="font-size:clamp(1.4rem,3vw,2.2rem)">
+          海苔養殖の父・早野義章
+          <small>大浜小の教え子と菊池川河口で<br>海苔養殖に挑戦</small>
+        </h2>
+        <div class="hayano-quote">
+          <blockquote>志は海を越え、<br/>いまも受け継がれる。</blockquote>
+        </div>
+
+        <div class="hayano-timeline">
+          <div class="hayano-tl-item">
+            <span class="hayano-tl-year">1862</span>
+            <span class="hayano-tl-label">文久2年</span>
+            <span class="hayano-tl-event">大浜町に生まれる</span>
+          </div>
+          <div class="hayano-tl-sep"></div>
+          <div class="hayano-tl-item">
+            <span class="hayano-tl-year">1880</span>
+            <span class="hayano-tl-label">明治13年</span>
+            <span class="hayano-tl-event">大浜小学校に奉職<br>後に校長に就任</span>
+          </div>
+          <div class="hayano-tl-sep"></div>
+          <div class="hayano-tl-item">
+            <span class="hayano-tl-year">1901</span>
+            <span class="hayano-tl-label">明治34年</span>
+            <span class="hayano-tl-event">県の海苔試験場を<br>大浜町に誘致</span>
+          </div>
+        </div>
+
+        <p>早野義章は、大浜町で文久2年（1862年）に生まれ、若くして東京に出て学びました。明治13年、18歳で大浜小学校に奉職すると6年後には校長に就任し、大浜町の子どもたちの教育に努めます。</p>
+        <p>江戸時代には菊池川流域の玄関口として廻船問屋が軒を連ね船運で栄えた大浜町も、鉄道輸送や通信手段の発達によってかつての賑わいはみられなくなっていました。早野は教え子の家庭の困窮に心を痛め、海を生かした産業振興を模索。海苔の養殖を熱心に説いたものの耳を傾けるものはなく、自ら手本を示すべく教職を辞し、私財を投じて研究を開始。明治34年には県の海苔試験場を大浜町に誘致し、生涯を通して海苔養殖の振興に奔走しました。</p>
+        <div class="hayano-badge">
+          <span>日本初</span>
+          <span>海苔養殖成功者の系譜</span>
+        </div>
+      </div>
+    </div>
+    <div class="section-purchase-cta reveal">
+      <a href="#products" class="btn-purchase">購入はこちら →</a>
+    </div>
+  </div>
+</section>
+
+<!-- ===== ⑥職人の技 ===== -->
+<section id="artisan" class="artisan-section">
+  <div class="artisan-bg-kanji">職人</div>
+  <div class="container">
+    <div class="section-eyebrow reveal" style="text-align:center;">ARTISAN CRAFTSMANSHIP</div>
+    <h2 class="section-title reveal" style="text-align:center;">職人の手が生み出す、<br/>毎日の違いが旨味になる。</h2>
+    <div class="gold-line reveal"></div>
+
+    <div class="artisan-grid">
+      <div class="artisan-card reveal">
+        <div class="artisan-img-ph">
+          <img src="images/artisan-harvest.jpg" alt="有明海での海苔養殖作業">
+          <span>手元 — ごみ取り</span>
+        </div>
+        <div class="artisan-card-body">
+          <div class="artisan-num">一</div>
+          <h3>毎日の手作業でのごみ取り</h3>
+          <p>一枚ずつ、目で見て、手で確かめる。手間を惜しまない丁寧な作業。機械では感知できない微細な異物を、熟練の目と感覚で取り除きます。</p>
+        </div>
+      </div>
+      <div class="artisan-card reveal">
+        <div class="artisan-img-ph">
+          <img src="images/artisan-wash.jpg" alt="海苔の洗い工程">
+          <span>工程 — 洗い</span>
+        </div>
+        <div class="artisan-card-body">
+          <div class="artisan-num">二</div>
+          <h3>洗いすぎない工程</h3>
+          <p>旨みのもとを残すため、洗いすぎません。過剰な洗浄はミネラルを失わせる。職人は有明海由来の旨味成分を意図的に残す製法を守り続けています。</p>
+        </div>
+      </div>
+      <div class="artisan-card reveal">
+        <div class="artisan-img-ph">
+          <img src="images/artisan-bake.jpg" alt="海苔の焼き工程">
+          <span>焼き — 火加減</span>
+        </div>
+        <div class="artisan-card-body">
+          <div class="artisan-num">三</div>
+          <h3>焼きの火加減</h3>
+          <p>気温や湿度に合わせて、毎日変化を見極め、最高の焼き上がりを引き出します。その日限りの判断が、均一な機械では絶対に出せない風味を生み出します。</p>
+        </div>
+      </div>
+      <div class="artisan-card reveal">
+        <div class="artisan-img-ph">
+          <img src="images/artisan-nori.jpg" alt="仕上がった大浜海苔">
+          <span>仕上げ — 厚さ</span>
+        </div>
+        <div class="artisan-card-body">
+          <div class="artisan-num">四</div>
+          <h3>厚さの調整</h3>
+          <p>厚すぎず、薄すぎず。歯切れのよい絶妙な厚さに仕上げます。職人の感覚でしか出せないこの厚みが、口溶けと食感の絶妙なバランスを生みます。</p>
+        </div>
+      </div>
+    </div>
+    <div class="section-purchase-cta reveal" style="border-top-color:rgba(200,169,106,0.15)">
+      <a href="#products" class="btn-purchase btn-purchase-dark">購入はこちら →</a>
+    </div>
+  </div>
+</section>
+
+<!-- ===== ⑦使用シーン ===== -->
+<section class="scene-section">
+  <div class="container">
+    <div class="section-eyebrow reveal" style="text-align:center">USE SCENE</div>
+    <h2 class="section-title reveal" style="text-align:center">大浜海苔が、<br/>料理の美味しさを引き立てる。</h2>
+    <div class="scene-grid">
+      <div class="scene-card reveal">
+        <div class="scene-img-ph scene-sushi"><span></span></div>
+        <div class="scene-label">
+          <h4>寿司・鮨</h4>
+          <p>香りが寿司の味を高める</p>
+        </div>
+      </div>
+      <div class="scene-card reveal">
+        <div class="scene-img-ph scene-onigiri"><span></span></div>
+        <div class="scene-label">
+          <h4>おにぎり</h4>
+          <p>シンプルだからこそ違いがわかる</p>
+        </div>
+      </div>
+      <div class="scene-card reveal">
+        <div class="scene-img-ph scene-kaiseki"><span></span></div>
+        <div class="scene-label">
+          <h4>懐食・料理の逸品に</h4>
+          <p>料理の味を引き立てる名脇役</p>
+        </div>
+      </div>
+      <div class="scene-card reveal">
+        <div class="scene-img-ph scene-home"><span></span></div>
+        <div class="scene-label">
+          <h4>ご家庭でも</h4>
+          <p>毎日の食卓を贅沢に</p>
+        </div>
+      </div>
+    </div>
+    <div class="section-purchase-cta reveal">
+      <a href="#products" class="btn-purchase">購入はこちら →</a>
+    </div>
+  </div>
+</section>
+
+<!-- ===== 栄養成分 ===== -->
+<section id="nutrition" class="nutrition-section">
+  <div class="container">
+    <div class="section-eyebrow reveal" style="text-align:center">NUTRITION</div>
+    <h2 class="section-title reveal" style="text-align:center">海の野菜から生まれる、<br>豊かな栄養。</h2>
+    <div class="gold-line reveal"></div>
+    <p class="nutrition-intro reveal">海苔をはじめとする海藻類は、海の栄養を吸収して成長することから「海の野菜」と言われています。更に、海苔は含まれる栄養素の豊富さから「海の牛肉」とも称されています。</p>
+
+    <div class="nutrient-grid">
+      <div class="nutrient-card reveal">
+        <span class="nutrient-num">01</span>
+        <div class="nutrient-name">タンパク質<span class="nutrient-role">筋肉を作る</span></div>
+        <p class="nutrient-desc">筋肉や臓器の構成、酵素やホルモンの成分として重要な栄養素です。不足すると免疫力低下につながる恐れがあり、手軽に摂取できる海苔はタンパク質補給に役立ちます。</p>
+      </div>
+      <div class="nutrient-card reveal">
+        <span class="nutrient-num">02</span>
+        <div class="nutrient-name">カリウム<span class="nutrient-role">細胞の浸透圧を保つ</span></div>
+        <p class="nutrient-desc">ナトリウムと共に細胞の浸透圧を保つ働きがあるミネラルの一種。塩分の摂り過ぎが気になる方は特に意識して摂りたい栄養素です。</p>
+      </div>
+      <div class="nutrient-card reveal">
+        <span class="nutrient-num">03</span>
+        <div class="nutrient-name">葉酸<span class="nutrient-role">細胞の生産・再生を助ける</span></div>
+        <p class="nutrient-desc">DNAやRNAの合成に関わり、細胞の生産や再生を助ける水溶性ビタミンです。特に胎児の成長に重要で、ビタミンB12と共に赤血球を作るため貧血対策にも役立ちます。</p>
+      </div>
+      <div class="nutrient-card reveal">
+        <span class="nutrient-num">04</span>
+        <div class="nutrient-name">ビタミンA<span class="nutrient-role">目と皮膚の健康を守る</span></div>
+        <p class="nutrient-desc">目や皮膚の粘膜の健康維持、抵抗力を高める働きがあります。皮膚の乾燥や暗所での視力低下が気になる方に特に必須の栄養素です。</p>
+      </div>
+      <div class="nutrient-card reveal">
+        <span class="nutrient-num">05</span>
+        <div class="nutrient-name">ビタミンC<span class="nutrient-role">免疫を強化する</span></div>
+        <p class="nutrient-desc">コラーゲンの生成に不可欠なビタミンで、肌や骨、血管などの健康を保ちます。免疫強化にも関わるため、抵抗力を高めることにも役立ちます。</p>
+      </div>
+      <div class="nutrient-card reveal">
+        <span class="nutrient-num">06</span>
+        <div class="nutrient-name">鉄<span class="nutrient-role">酸素を全身へ運ぶ</span></div>
+        <p class="nutrient-desc">赤血球に含まれ、酸素を運ぶ働きをしています。海苔の鉄は吸収率が低めのため、動物性食品やビタミンCと一緒に摂取して吸収率を高めましょう。</p>
+      </div>
+      <div class="nutrient-card reveal">
+        <span class="nutrient-num">07</span>
+        <div class="nutrient-name">ヨウ素<span class="nutrient-role">代謝を維持・促進する</span></div>
+        <p class="nutrient-desc">甲状腺に存在するミネラルで、基礎代謝の維持・促進、また幼児の成長促進に欠かせないホルモンの材料になります。</p>
+      </div>
+      <div class="nutrient-card reveal">
+        <span class="nutrient-num">08</span>
+        <div class="nutrient-name">食物繊維<span class="nutrient-role">腸内環境を整える</span></div>
+        <p class="nutrient-desc">腸内環境を整えてくれます。特に発酵食品と組み合わせると、よりその効果が増します。日々の食卓に取り入れることで腸活をサポートします。</p>
+      </div>
+      <div class="nutrient-card reveal">
+        <span class="nutrient-num">09</span>
+        <div class="nutrient-name">EPA<span class="nutrient-role">血液をサラサラに保つ</span></div>
+        <p class="nutrient-desc">体内で合成できない不飽和脂肪酸の一つ。免疫反応の調整を行い、血液をサラサラに保ちます。また、中性脂肪を下げる働きも期待できます。</p>
+      </div>
+    </div>
+
+    <div class="nutrition-close reveal">
+      <p>菊池渓谷のミネラルも含んだ大浜の海で育った海苔。栄養もミネラルも十分に含んだ海苔は、そのままでも、ご飯やおかずにしてもとにかく美味しい。歯ごたえ、口どけ、海のかおりも抜群に感じられます。</p>
+      <p>摂取できる海苔の栄養素を効率よく補給し、美味しく体内環境を整えましょう。</p>
+    </div>
+    <div class="section-purchase-cta reveal">
+      <a href="#products" class="btn-purchase">購入はこちら →</a>
+    </div>
+  </div>
+</section>
+
+<!-- ===== ⑧実績 / 使用店舗 ===== -->
+<section id="results" class="results-section">
+  <div class="container">
+    <div class="results-inner">
+      <div class="results-text reveal">
+        <div class="section-eyebrow">TRACK RECORD</div>
+        <h2 class="section-title">全国のプロに<br/>選ばれています。</h2>
+        <p>一流料亭・寿司店・ホテル・旅館など、多くの飲食店の現場でご使用いただいています。プロが厳しい目で選び、リピートし続ける品質がそこにあります。</p>
+        <a href="#contact" class="btn-outline">使用店舗・実績を見る →</a>
+      </div>
+      <div class="results-nums reveal">
+        <div class="result-num-item">
+          <span class="big-num">300<sup>+</sup></span>
+          <span class="num-label">取引飲食店数</span>
+        </div>
+        <div class="result-num-item">
+          <span class="big-num">全国</span>
+          <span class="num-label">出荷エリア</span>
+        </div>
+        <div class="result-num-item">
+          <span class="big-num">海外</span>
+          <span class="num-label">輸出実績あり</span>
+        </div>
+      </div>
+    </div>
+    <div class="section-purchase-cta reveal">
+      <a href="#products" class="btn-purchase">購入はこちら →</a>
+    </div>
+  </div>
+</section>
+
+<!-- ===== ⑨商品ラインナップ ===== -->
+<section id="products" class="products-section">
+  <div class="container">
+    <div class="section-eyebrow reveal" style="text-align:center">OUR PRODUCTS</div>
+    <h2 class="section-title reveal" style="text-align:center">商品ラインナップ</h2>
+    <div class="gold-line reveal"></div>
+
+    <div class="product-tabs reveal">
+      <button class="ptab active" data-tab="home">家庭用商品</button>
+      <button class="ptab" data-tab="pro">プロ用商品</button>
+      <button class="ptab" data-tab="gift">贈答用商品</button>
+    </div>
+
+    <div class="product-panel" id="panel-pro">
+      <div class="product-intro">
+        <p>飲食店・料理人のための業務用商品。大ロット・ハイクラスも対応可能。</p>
+      </div>
+      <div class="products-grid">
+        <div class="product-card">
+          <div class="product-img-ph"><span>業務用 焼き海苔</span><div class="product-badge-tag">PRO</div></div>
+          <div class="product-body">
+            <h4>業務用 焼き海苔（大判）</h4>
+            <p>料亭・和食レストラン向け。有明海大浜産100%使用。厳選した最上質品。</p>
+            <div class="product-price">価格はお問い合わせください</div>
+            <a href="#contact" class="btn-outline-sm">お問い合わせ</a>
+          </div>
+        </div>
+        <div class="product-card">
+          <div class="product-img-ph"><span>業務用 味付け海苔</span><div class="product-badge-tag">PRO</div></div>
+          <div class="product-body">
+            <h4>業務用 味付け海苔</h4>
+            <p>和食・洋食に対応できる上品な味わい。飲食店の一品を格上げします。</p>
+            <div class="product-price">価格はお問い合わせください</div>
+            <a href="#contact" class="btn-outline-sm">お問い合わせ</a>
+          </div>
+        </div>
+        <div class="product-card">
+          <div class="product-img-ph"><span>業務用 バラ海苔</span><div class="product-badge-tag">PRO</div></div>
+          <div class="product-body">
+            <h4>業務用 バラ海苔（原藻）</h4>
+            <p>ラーメン・うどん・各種料理のトッピングに。有明海の風味そのまま。</p>
+            <div class="product-price">価格はお問い合わせください</div>
+            <a href="#contact" class="btn-outline-sm">お問い合わせ</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="product-panel active" id="panel-home">
+      <div class="product-intro">
+        <p>ご家庭で楽しめる上質な海苔。使いやすいサイズでご用意。</p>
+      </div>
+      <div class="products-grid">
+        <div class="product-card">
+          <div class="product-img-ph"><span>家庭用 焼き海苔</span></div>
+          <div class="product-body">
+            <h4>家庭用 焼き海苔</h4>
+            <p>毎日の食卓に。おにぎり・手巻き寿司に最適な旨味たっぷりの一品。</p>
+            <div class="product-price">¥1,800〜</div>
+            <button class="btn-add-cart" data-id="home-yaki" data-name="家庭用 焼き海苔" data-price="1800">カートに追加</button>
+          </div>
+        </div>
+        <div class="product-card">
+          <div class="product-img-ph"><span>家庭用 味付け海苔</span></div>
+          <div class="product-body">
+            <h4>家庭用 味付け海苔</h4>
+            <p>素材の旨みを生かした上品な味付け。ご飯との相性は抜群です。</p>
+            <div class="product-price">¥1,500〜</div>
+            <button class="btn-add-cart" data-id="home-aji" data-name="家庭用 味付け海苔" data-price="1500">カートに追加</button>
+          </div>
+        </div>
+        <div class="product-card">
+          <div class="product-img-ph"><span>詰め合わせセット</span></div>
+          <div class="product-body">
+            <h4>家庭用 詰め合わせセット</h4>
+            <p>焼き海苔・味付け海苔のセット。大浜海苔を存分にお楽しみください。</p>
+            <div class="product-price">¥3,800〜</div>
+            <button class="btn-add-cart" data-id="home-set" data-name="家庭用 詰め合わせセット" data-price="3800">カートに追加</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="product-panel" id="panel-gift">
+      <div class="product-intro">
+        <p>大切な方への贈り物に。高級感あるギフトセット。</p>
+      </div>
+      <div class="products-grid">
+        <div class="product-card">
+          <div class="product-img-ph"><span>贈答用 高級焼き海苔</span><div class="product-badge-tag" style="background:#C8A96A;color:#1A1A1A">GIFT</div></div>
+          <div class="product-body">
+            <h4>贈答用 高級焼き海苔セット</h4>
+            <p>大切な方への贈り物に。風呂敷包みの高級感ある仕上がりで喜ばれます。</p>
+            <div class="product-price">¥5,400〜</div>
+            <button class="btn-add-cart" data-id="gift-premium" data-name="贈答用 高級焼き海苔セット" data-price="5400">カートに追加</button>
+          </div>
+        </div>
+        <div class="product-card">
+          <div class="product-img-ph"><span>慶事用 特撰セット</span><div class="product-badge-tag" style="background:#C8A96A;color:#1A1A1A">GIFT</div></div>
+          <div class="product-body">
+            <h4>慶事用 大浜海苔 特撰セット</h4>
+            <p>お中元・お歳暮・結婚祝いなど、慶事の贈り物として最適な特撰品。</p>
+            <div class="product-price">¥8,640〜</div>
+            <button class="btn-add-cart" data-id="gift-special" data-name="慶事用 大浜海苔 特撰セット" data-price="8640">カートに追加</button>
+          </div>
+        </div>
+        <div class="product-card">
+          <div class="product-img-ph"><span>法人向け ギフト</span><div class="product-badge-tag" style="background:#C8A96A;color:#1A1A1A">GIFT</div></div>
+          <div class="product-body">
+            <h4>法人向け 記念ギフトセット</h4>
+            <p>周年記念・取引先へのご挨拶。熨斗・包装・名入れに対応いたします。</p>
+            <div class="product-price">要相談</div>
+            <a href="#contact" class="btn-outline-sm">お問い合わせ</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== ⑩お客様の声 ===== -->
+<section class="voice-section">
+  <div class="container">
+    <div class="section-eyebrow reveal" style="text-align:center">CUSTOMER VOICE</div>
+    <h2 class="section-title reveal" style="text-align:center">お客様の声</h2>
+    <div class="voice-grid">
+      <div class="voice-card reveal">
+        <div class="voice-header">
+          <div class="voice-avatar"><span>料</span></div>
+          <div>
+            <div class="voice-name">鮨 ○○（福岡）店主様</div>
+            <div class="voice-stars">★★★★★</div>
+          </div>
+        </div>
+        <blockquote>香り、旨味、口どけ、どれをとっても別格です。他の海苔に戻れなくなりました。お客様からも「海苔が美味しい」と言っていただけ、自信を持って使い続けています。</blockquote>
+      </div>
+      <div class="voice-card reveal">
+        <div class="voice-header">
+          <div class="voice-avatar"><span>お</span></div>
+          <div>
+            <div class="voice-name">おにぎり専門店 店主様</div>
+            <div class="voice-stars">★★★★★</div>
+          </div>
+        </div>
+        <blockquote>おにぎりに巻いた瞬間から香りが違います。食べた時の海苔の旨みが口いっぱいに広がり、握り具合との相性も抜群。毎日使用しています。</blockquote>
+      </div>
+      <div class="voice-card reveal">
+        <div class="voice-header">
+          <div class="voice-avatar"><span>家</span></div>
+          <div>
+            <div class="voice-name">ご家庭のお客様</div>
+            <div class="voice-stars">★★★★★</div>
+          </div>
+        </div>
+        <blockquote>子どもも喜んで食べています。安心・安全で使いやすく、毎日の食卓に欠かせません。贈り物としても大変喜ばれました。</blockquote>
+      </div>
+    </div>
+    <div class="section-purchase-cta reveal">
+      <a href="#products" class="btn-purchase">購入はこちら →</a>
+    </div>
+  </div>
+</section>
+
+<!-- ===== レシピ ===== -->
+<section id="recipe" class="recipe-section">
+  <div class="container">
+    <div class="section-eyebrow reveal" style="text-align:center">RECIPE</div>
+    <h2 class="section-title reveal" style="text-align:center">大浜海苔レシピ</h2>
+    <div class="gold-line reveal"></div>
+    <div class="recipe-grid">
+      <div class="recipe-card reveal">
+        <div class="recipe-img-ph"><span>磯バターご飯</span></div>
+        <div class="recipe-body">
+          <span class="recipe-tag">和食</span>
+          <h4>大浜海苔の磯バターご飯</h4>
+          <p>香ばしく焼いた海苔にバターを合わせた、シンプルで贅沢な一品。</p>
+        </div>
+      </div>
+      <div class="recipe-card reveal">
+        <div class="recipe-img-ph"><span>細巻き</span></div>
+        <div class="recipe-body">
+          <span class="recipe-tag">寿司</span>
+          <h4>職人巻き — 大浜海苔の細巻き</h4>
+          <p>歯切れのよさが際立つ大浜海苔で作る、海苔の風味が主役の細巻き。</p>
+        </div>
+      </div>
+      <div class="recipe-card reveal">
+        <div class="recipe-img-ph"><span>磯スープ</span></div>
+        <div class="recipe-body">
+          <span class="recipe-tag">スープ</span>
+          <h4>有明海苔の磯の香りスープ</h4>
+          <p>だしと海苔の旨味が溶け合う滋味深いスープ。体に沁みる温かさ。</p>
+        </div>
+      </div>
+      <div class="recipe-card reveal">
+        <div class="recipe-img-ph"><span>海苔チーズ</span></div>
+        <div class="recipe-body">
+          <span class="recipe-tag">創作</span>
+          <h4>大浜海苔とクリームチーズのカナッペ</h4>
+          <p>ワインに合うおつまみとして美食家に人気の、海苔×チーズの組み合わせ。</p>
+        </div>
+      </div>
+    </div>
+    <div class="section-purchase-cta reveal">
+      <a href="#products" class="btn-purchase">購入はこちら →</a>
+    </div>
+  </div>
+</section>
+
+<!-- ===== 海外発送 ===== -->
+<section id="overseas" class="overseas-section">
+  <div class="container">
+    <div class="overseas-inner">
+      <div class="overseas-text reveal">
+        <div class="section-eyebrow" style="color:#C8A96A">INTERNATIONAL SHIPPING</div>
+        <h2 class="section-title" style="color:#FAF9F6">海外発送<br/>承ります</h2>
+        <p>有明海大浜の恵みを世界中にお届けします。アジア・北米・ヨーロッパを中心に、多くの国への発送に対応。贈り物としての海外発送も承ります。</p>
+        <ul class="overseas-list">
+          <li>アジア全域（韓国・中国・台湾・香港・シンガポールほか）</li>
+          <li>北米（アメリカ・カナダ）</li>
+          <li>ヨーロッパ主要国</li>
+          <li>その他の地域はご相談ください</li>
+        </ul>
+        <a href="#contact" class="btn-primary-dark" style="margin-top:2rem;display:inline-block">海外発送のお問い合わせ</a>
+      </div>
+      <div class="overseas-globe reveal">
+        <svg viewBox="0 0 240 240" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="120" cy="120" r="100" stroke="#C8A96A" stroke-width="1" opacity="0.5"/>
+          <circle cx="120" cy="120" r="70" stroke="#C8A96A" stroke-width="0.8" opacity="0.35"/>
+          <circle cx="120" cy="120" r="40" stroke="#C8A96A" stroke-width="0.6" opacity="0.2"/>
+          <ellipse cx="120" cy="120" rx="100" ry="44" stroke="#C8A96A" stroke-width="0.8" opacity="0.35"/>
+          <ellipse cx="120" cy="120" rx="100" ry="72" stroke="#C8A96A" stroke-width="0.6" opacity="0.25"/>
+          <line x1="20" y1="120" x2="220" y2="120" stroke="#C8A96A" stroke-width="0.8" opacity="0.35"/>
+          <line x1="120" y1="20" x2="120" y2="220" stroke="#C8A96A" stroke-width="0.8" opacity="0.35"/>
+          <circle cx="120" cy="120" r="6" fill="#C8A96A" opacity="0.7"/>
+        </svg>
+        <div class="globe-text">WORLD WIDE DELIVERY</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== ⑪CTA ===== -->
+<section class="cta-section">
+  <div class="cta-overlay"></div>
+  <div class="container">
+    <div class="cta-inner reveal">
+      <div class="section-eyebrow" style="color:#C8A96A;text-align:center">CALL TO ACTION</div>
+      <h2 class="cta-title">本物の海苔を、ぜひ一度。<br/><small>あなたの料理を、もっと美しく。</small></h2>
+      <div class="cta-btns">
+        <a href="#products" class="btn-primary">商品を選ぶ</a>
+        <a href="#contact" class="btn-ghost-white">業務用・仕入れのお問い合わせ</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== Instagram ===== -->
+<section class="ig-section">
+  <div class="container">
+    <div class="section-eyebrow reveal" style="text-align:center">INSTAGRAM</div>
+    <h2 class="section-title reveal" style="text-align:center">@ohama_nori</h2>
+    <div class="ig-grid reveal">
+      <div class="ig-cell"><div class="ig-ph">海苔 1</div></div>
+      <div class="ig-cell"><div class="ig-ph">海苔 2</div></div>
+      <div class="ig-cell"><div class="ig-ph">海苔 3</div></div>
+      <div class="ig-cell"><div class="ig-ph">海苔 4</div></div>
+      <div class="ig-cell"><div class="ig-ph">海苔 5</div></div>
+      <div class="ig-cell"><div class="ig-ph">海苔 6</div></div>
+    </div>
+    <div class="ig-follow reveal">
+      <a href="https://www.instagram.com/" target="_blank" rel="noopener" class="btn-ghost">Instagramをフォローする →</a>
+    </div>
+  </div>
+</section>
+
+<!-- ===== CONTACT ===== -->
+<section id="contact" class="contact-section">
+  <div class="container">
+    <div class="section-eyebrow reveal" style="text-align:center">CONTACT</div>
+    <h2 class="section-title reveal" style="text-align:center">お問い合わせ</h2>
+    <div class="gold-line reveal"></div>
+    <p class="section-desc reveal" style="text-align:center">ご購入・業務用のご注文・海外発送などのお問い合わせは<br/>下記フォームよりお気軽にどうぞ。</p>
+    <form class="contact-form reveal" id="contactForm" novalidate>
+      <div class="form-row">
+        <div class="form-group">
+          <label>お名前 <span class="req">必須</span></label>
+          <input type="text" name="name" placeholder="山田 太郎" required/>
+        </div>
+        <div class="form-group">
+          <label>フリガナ</label>
+          <input type="text" name="kana" placeholder="ヤマダ タロウ"/>
+        </div>
+      </div>
+      <div class="form-row">
+        <div class="form-group">
+          <label>メールアドレス <span class="req">必須</span></label>
+          <input type="email" name="email" placeholder="example@mail.com" required/>
+        </div>
+        <div class="form-group">
+          <label>お電話番号</label>
+          <input type="tel" name="tel" placeholder="090-0000-0000"/>
+        </div>
+      </div>
+      <div class="form-group">
+        <label>会社名・屋号（法人の方）</label>
+        <input type="text" name="company" placeholder="株式会社 ○○"/>
+      </div>
+      <div class="form-group">
+        <label>お問い合わせ種別 <span class="req">必須</span></label>
+        <select name="type" required>
+          <option value="">選択してください</option>
+          <option>業務用商品のご注文・お見積もり</option>
+          <option>家庭用・贈答用商品の購入</option>
+          <option>海外発送について</option>
+          <option>取材・メディア掲載</option>
+          <option>その他</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label>お問い合わせ内容 <span class="req">必須</span></label>
+        <textarea name="message" rows="6" placeholder="ご質問・ご要望をご記入ください" required></textarea>
+      </div>
+      <div class="form-privacy">
+        <label class="check-label">
+          <input type="checkbox" name="privacy" required/>
+          <span><a href="#" class="gold-link">プライバシーポリシー</a>に同意する</span>
+        </label>
+      </div>
+      <button type="submit" class="btn-submit">送信する</button>
+      <div class="form-msg" id="formMsg"></div>
+    </form>
+  </div>
+</section>
+
+<!-- ===== FOOTER ===== -->
+<footer class="footer">
+  <div class="footer-top">
+    <div class="footer-brand">
+      <div class="footer-logo">
+        <span class="footer-logo-en">OHAMA NORI</span>
+        <span class="footer-logo-ja">大浜海苔</span>
+      </div>
+      <p>有明海大浜の海苔養殖製造<br/>大浜地域プロジェクト 株式会社</p>
+      <p class="footer-addr">〒861-5421 熊本県玉名市小天665-1</p>
+      <a href="https://www.instagram.com/" target="_blank" rel="noopener" class="footer-ig">
+        <svg viewBox="0 0 24 24" fill="currentColor" width="16" height="16"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+        Instagram
+      </a>
+    </div>
+    <nav class="footer-nav">
+      <div class="footer-nav-col">
+        <h5>コンテンツ</h5>
+        <a href="#story">大浜海苔のこだわり</a>
+        <a href="#hayano">早野義章の想い</a>
+        <a href="#artisan">職人の技</a>
+        <a href="#results">使用店舗・実績</a>
+      </div>
+      <div class="footer-nav-col">
+        <h5>ショッピング</h5>
+        <a href="#products">商品一覧</a>
+        <a href="#recipe">レシピ</a>
+        <a href="#overseas">海外発送について</a>
+        <a href="#contact">よくあるご質問</a>
+      </div>
+      <div class="footer-nav-col">
+        <h5>サポート</h5>
+        <a href="#contact">お知らせ</a>
+        <a href="#contact">お問い合わせ</a>
+        <a href="#">特定商取引法に基づく表記</a>
+        <a href="#">プライバシーポリシー</a>
+      </div>
+    </nav>
+  </div>
+  <div class="footer-bottom">
+    <p>© 2025 大浜地域プロジェクト株式会社 / 大浜海苔養殖組合. All Rights Reserved.</p>
+    <div class="footer-payments">
+      <span>VISA</span><span>Master</span><span>JCB</span>
+    </div>
+  </div>
+</footer>
+
+<!-- Page Top -->
+<button class="page-top-btn" id="pageTop" aria-label="ページトップ">↑</button>
+
+<script src="script.js"></script>
+</body>
+</html>
