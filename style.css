@@ -1351,6 +1351,10 @@ ul { list-style: none; }
 }
 
 @media (max-width: 768px) {
+  /* background-attachment:fixed はスマホで非対応のため scroll に切替 */
+  .nutrition-section { background-attachment: scroll; }
+  .artisan-section::before { background-attachment: scroll; }
+
   .products-grid { grid-template-columns: 1fr 1fr; }
   .nutrient-grid { grid-template-columns: repeat(2, 1fr); }
   .voice-grid { grid-template-columns: 1fr; }
